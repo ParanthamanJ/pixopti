@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PixOpti - Free Image Resizer Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resize images online to exact width and height using PixOpti. Supports JPG and PNG. Free, fast and works directly in your browser.">
+  <link rel="stylesheet" href="resize.css">
+</head>
+<body>
+  <header class="header">
+  <div class="logo">
+    <span class="pix">Pix</span><span class="opti">Opti</span>
+  </div>
+</header>
+
+  <h1>PixOpti Image Resizer</h1>
+  <p class="subtitle">Resize images to exact width and height in pixels - fast and easy.</p>
+    
+  <div class="container">
+    <input type="file" id="upload" accept="image/*" hidden>
+
+  <label for="upload" class="upload-btn">
+  📁 Choose Image
+</label>
+
+<p id="fileName" class="file-name">No file selected</p>
+<p class="format-label">Enter Width and Height</p>
+    <div class="inputs">
+    <label>
+          Width:
+          <input type="number" id="width" placeholder="Width in px">
+        </label>
+        <label>
+          Height:
+          <input type="number" id="height" placeholder="Height in px">
+        </label>
+        <label>
+          <input type="checkbox" id="keepAspect" checked>
+          Keep aspect ratio
+        </label>
+      </div>
+      <button id="resizeBtn">Resize & Download</button>
+
+    <div id="output"></div>
+    
+<div class="features">
+  <div class="card">⚡ Fast  Resize</div>
+  <div class="card">🔒 100% Secure (Browser Based)</div>
+  <div class="card">📱 Mobile Friendly</div>
+</div>
+  </div>
+
+<!-- TOOLS -->
+  <section class="tools">
+    <h2>Other Tools</h2>
+
+    <div class="tools-grid">
+
+      <a href="converter.html" class="tool-card">
+        <h3>Image Converter</h3>
+        <p>Convert images between JPG, PNG & WebP formats instantly.</p>
+      </a>
+
+      <a href="compress.html" class="tool-card">
+        <h3>Image Compressor</h3>
+        <p>Compress images online without losing quality.</p>
+      </a>
+    </div>
+  </section>
+
+<section class="how">
+  <h2>How to Resize Images</h2>
+
+  <div class="how-steps">
+    <div class="step">
+      <span>1</span>
+      <p>Select the image you want to resize from your device</p>
+    </div>
+
+    <div class="step">
+      <span>2</span>
+      <p>Enter width and height values</p>
+    </div>
+
+    <div class="step">
+      <span>3</span>
+      <p>Click resize and download</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h4>Is this image resizer free?</h4>
+    <p>Yes, 100% free and no signup required.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Are my images uploaded to a server?</h4>
+    <p>No. Everything runs inside your browser. Your images stay on your device.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Does it support PNG?</h4>
+    <p>Yes, PNG and JPG images are supported.</p>
+  </div>
+</section>
+
+  <script src="resize.js"></script>
+  
+  <footer>
+  <p>© 2026 PixOpti</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PixOpti - Free Image Converter Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert images between JPG, PNG and WebP formats instantly using PixOpti. Free, fast and fully browser based image converter.">
+  <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+  <header class="header">
+  <div class="logo">
+    <span class="pix">Pix</span><span class="opti">Opti</span>
+  </div>
+</header>
+
+  <h1>PixOpti Image Converter</h1>
+  <p class="subtitle">Convert images instantly - JPG, PNG & WebP. No uploads required.</p>
+    
+  <div class="container">
+    <input type="file" id="upload" accept="image/*" hidden>
+
+  <label for="upload" class="upload-btn">
+  📁 Choose Image
+</label>
+
+<p id="fileName" class="file-name">No file selected</p>
+
+<p class="format-label">Choose output format</p> 
+<select id="format">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="webp">WebP</option>
+        </select>
+        <small class="helper-text">Supported formats: JPG, PNG, WebP</small>
+        <button onclick="convertImage()">Convert & Download</button>
+
+    <div id="output"></div>
+    
+    
+    
+<div class="features">
+  <div class="card">⚡ Fast  Conversion</div>
+  <div class="card">🔒 100% Secure (Browser Based)</div>
+  <div class="card">📱 Mobile Friendly</div>
+</div>
+  </div>
+
+<!-- TOOLS -->
+  <section class="tools">
+    <h2>Other Tools</h2>
+
+    <div class="tools-grid">
+
+      <a href="compress.html" class="tool-card">
+        <h3>Image Compression</h3>
+        <p>Compress images online without losing quality.</p>
+      </a>
+
+      <a href="resize.html" class="tool-card">
+        <h3>Image Resizer</h3>
+        <p>Resize images to exact width and height in pixels.</p>
+      </a>
+    </div>
+  </section>
+
+<section class="how">
+  <h2>How to Convert Images</h2>
+
+  <div class="how-steps">
+    <div class="step">
+      <span>1</span>
+      <p>Select JPG or PNG image from your device</p>
+    </div>
+
+    <div class="step">
+      <span>2</span>
+      <p>Choose format you want to convert </p>
+    </div>
+
+    <div class="step">
+      <span>3</span>
+      <p>Click convert and download</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h4>Is this image converter free?</h4>
+    <p>Yes, 100% free and no signup required.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Are my images uploaded to a server?</h4>
+    <p>No. Everything runs inside your browser. Your images stay on your device.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Does it support PNG?</h4>
+    <p>Yes, PNG and JPG images are supported.</p>
+  </div>
+</section>
+
+  <script src="converter.js"></script>
+  
+  <footer>
+  <p>© 2026 PixOpti</p>
+</footer>
+</body>
+</html>

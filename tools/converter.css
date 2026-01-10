@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 460px;
+  background: #ffffff;
+  padding: 22px;
+  margin: 40px auto;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.subtitle {
+  font-size: 16px;          
+  color: #555;              
+  font-weight: 400;
+  margin-top: 8px;          
+  line-height: 1.5;
+  text-align: center;        
+}
+
+input[type="file"],
+input[type="range"] {
+  width: 100%;
+  margin: 12px 0;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Format select wrapper */
+.format-label {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+/* Select dropdown */
+#format {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Focus effect */
+#format:focus {
+  border-color: #5b5bf0;
+}
+
+/* Helper text below */
+.helper-text {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #777;
+  text-align: left;
+}
+
+#output {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #4f46e5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Loading spinner */
+.loader {
+  margin: 15px auto;
+  border: 4px solid #eee;
+  border-top: 4px solid #4f46e5;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+section {
+  padding: 40px 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.how-steps {
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+}
+
+section p {
+  line-height: 1.7;
+  color: black;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #eaeaea;
+  color: #555;
+  padding: 0 22px;
+}
+
+/* File upload button */
+.upload-btn {
+  display: block;
+  padding: 12px;
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #374151;
+  background: #f9fafb;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #eef2ff;
+  border-color: #4f46e5;
+}
+
+.file-name {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* Header */
+.header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #eaeaea;
+  height: 45px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Inter, system-ui, sans-serif;
+  letter-spacing: 0.4px;
+  padding: 10px;
+}
+
+.logo .pix {
+  color: #111;
+}
+
+.logo .opti {
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 14px 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+/* TOOLS */
+.tools {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.tools h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.tool-card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.tool-card:hover {
+  border-color: #4A5CF0;
+  transform: translateY(-2px);
+}
+
+.tool-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.tool-card p {
+  color: #555;
+  font-size: 14px;
+}
